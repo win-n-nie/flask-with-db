@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Patient List </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}"> 
+</head>
+<header>
+    <div class="mx-auto" style="width: 600px;">
+        <h1>Grey Sloan Memorial Hospital</h1>
+    </div>
+    <div class="mx-auto" style="width: 300px;">
+        <h3>Seattle's #1 Hospital</h3>
+    </div>
+</header>
+<body>
+
+    <div>
+
+            <h1> Patient Table with Bootstrap</h1>
+            <table class="table table-dark table-striped">
+                <tr>  
+                    <th> MRN </th>
+                    <th> First Name </th>
+                    <th> Last Name </th>
+                    <th> DOB </th>
+                    <th> City </th>
+                    <th> Physicain </th>
+                    <th> Department </th>
+                    <th> Pharmacy </th>
+                </tr>
+                {% for patient in listPatients %}
+                    <tr>
+                        <td> {{ patient.MRN }} </td>
+                        <td> {{ patient.firstName }} </td>
+                        <td> {{ patient.lastName }} </td>
+                        <td> {{ patient.DOB }} </td>
+                        <td> {{ patient.city }} </td>
+                        <td> {{ patient.physician }} </td>
+                        <td> {{ patient.department }} </td>
+                        <td> {{ patient.pharmacy }} </td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+
+
+    </div>
+
+
+</body>
+</html>
