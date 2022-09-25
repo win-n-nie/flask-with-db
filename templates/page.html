@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>homepage</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">       
+    </head>
+  <div class="container-fluid p-3 my-3 bg-dark text-white">
+    <header>    
+        <div class="mx-auto" style="width: 600px;">
+            <h1>Grey Sloan Memorial Hospital</h1>
+        </div>
+        <div class="mx-auto" style="width: 300px;">
+            <h3>Seattle's #1 Hospital</h3>
+        </div>  
+    </header>
+  </div>
+    <nav class="navbar" style="background-color: #e3f2fd;">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Memorial Sloan</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://myperfectitinerary.com/greys-anatomy-lovers-guide-to-seattle/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://192.168.1.116/patients">Patient Portal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </nav>
+    <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>It's a beautiful day to save lives.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Dr. Shepherd <cite title="Source Title">Grey's Anatomy</cite>
+        </figcaption>
+      </figure>
+</html>

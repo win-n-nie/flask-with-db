@@ -5,19 +5,21 @@
     <title> Patient List </title>
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}"> 
 </head>
-<header>
-    <div class="mx-auto" style="width: 600px;">
-        <h1>Grey Sloan Memorial Hospital</h1>
-    </div>
-    <div class="mx-auto" style="width: 300px;">
-        <h3>Seattle's #1 Hospital</h3>
-    </div>
-</header>
+<div class="container-fluid p-3 my-3 bg-dark text-white">
+    <header>    
+        <div class="mx-auto" style="width: 600px;">
+            <h1>Grey Sloan Memorial Hospital</h1>
+        </div>
+        <div class="mx-auto" style="width: 300px;">
+            <h3>Seattle's #1 Hospital</h3>
+        </div>  
+    </header>
+</div>
 <body>
 
     <div>
 
-            <h1> Patient Table with Bootstrap</h1>
+            <h1> Patient Table</h1>
             <table class="table table-dark table-striped">
                 <tr>  
                     <th> MRN </th>
