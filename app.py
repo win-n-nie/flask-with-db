@@ -20,7 +20,7 @@ def index():
     patientListSql = db.execute('SELECT * FROM patient_table').fetchall()
     db.close()
     print('patientListSql:', patientListSql)
-    return render_template('home.html', listPatients=patientListSql) # note, these are two variables, patientsList is what we can then look up in the .html, and the patientsListSql is the actual data we are pulling from the sqlite db
+    return render_template('page.html', listPatients=patientListSql) # note, these are two variables, patientsList is what we can then look up in the .html, and the patientsListSql is the actual data we are pulling from the sqlite db
 
 @app.route('/patients')
 def bootstrap():
